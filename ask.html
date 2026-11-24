@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ask a question or send a request to Pickleball Fun.">
+  <title>Ask Us | Pickleball Fun</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">Pickleball Fun</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" title="Welcome to Pickleball Fun">Home</a></li>
+          <li><a href="about.html" title="What is pickleball?">About</a></li>
+          <li><a href="rules.html" title="Learn the basic rules">Rules</a></li>
+          <li><a href="gallery.html" title="See pickleball photos">Gallery</a></li>
+          <li><a href="ask.html" class="nav-cta" aria-current="page" title="Ask a question or send a request">Ask Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    
+    <section class="section">
+      <div class="container contact-grid">
+
+        
+        <div>
+          <h1>Ask Us</h1>
+          <p>Stuck on a rule? Not sure what to buy? Want to join a game?
+             Ask us a question or send us a request and we will reply by email.</p>
+          <ul class="contact-list">
+            <li><strong>Ask a Question:</strong> rules, equipment, how to start.</li>
+            <li><strong>Make a Request:</strong> a beginner session, a new topic, or more photos.</li>
+            <li><strong>Where we play:</strong> Your school gym or court</li>
+            <li><strong>Play times:</strong> Saturdays, 8:00 AM - 10:00 AM</li>
+          </ul>
+        </div>
+
+        
+        <form class="contact-form"
+              action="mailto:yourname@example.com?subject=Pickleball%20Fun%20-%20Question%20or%20Request"
+              method="post" enctype="text/plain">
+
+          
+          <fieldset class="request-type">
+            <legend>I want to...</legend>
+            <input type="radio" id="type-question" name="type" value="Question" checked>
+            <label for="type-question">Ask a Question</label>
+            <input type="radio" id="type-request" name="type" value="Request">
+            <label for="type-request">Make a Request</label>
+          </fieldset>
+
+          
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option>Rules of the game</option>
+            <option>Equipment</option>
+            <option>Where and when to play</option>
+            <option>Beginner session or lessons</option>
+            <option>Website topic or photo</option>
+            <option>Something else</option>
+          </select>
+
+          
+          <div class="form-row">
+            <div>
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+            </div>
+            <div>
+              <label for="email">Your email *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          
+          <label for="message">Your question or request *</label>
+          <textarea id="message" name="message" rows="3" minlength="10"
+                    placeholder="Type your question or request here" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-copy"> 2026 Pickleball Fun. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
